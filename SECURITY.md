@@ -1,3 +1,10 @@
 # Security Policy
 
-If you think you have found an issue that poses a security risk or impacts the privacy of users of Carbon Mapper services, please [report a vulnerability](https://github.com/carbon-mapper/platform-public/security/advisories/new) and follow the prompts in the issue template. These will be discussed internally, and we may reach out to you via email to discuss further.
+If you think you have found an issue that poses a security risk or impacts the privacy of users of Carbon Mapper services, please send an emaill to security@carbonmapper.org, and include the following information:
+
+- Description of the vulnerability
+- Steps to reproduce the issue (if possible)
+- In the case of API-related issues, API endpoints involved and the body the request that triggered the behavior in question
+- In the case of website-realted issues, browser type and version
+
+Security issues will be discussed internally, and we may reach out to you via email to discuss further.
