@@ -1,6 +1,6 @@
 # Security Policy
 
-If you think you have found an issue that poses a security risk or impacts the privacy of users of Carbon Mapper services, please send an emaill to security@carbonmapper.org, and include the following information:
+If you think you have found an issue that poses a security risk or impacts the privacy of users of Carbon Mapper services, please send an email to security@carbonmapper.org, and include the following information:
 
 - Description of the vulnerability
 - Steps to reproduce the issue (if possible)

@@ -1,6 +1,6 @@
 # Carbon Mapper Issue Tracker
 
-This repository serves as a public issue tracker for the Carbon Mapper platform and any other public-facing tools. It does not contain any of the code that powers the platform.
+This repository serves as a public issue tracker for the Carbon Mapper platform and any other public-facing tools. It does not contain any of the code that powers the platform. If you have questions about Carbon Mapper the organization or the data found within our platform, please visit our [contact page](https://carbonmapper.org/contact-us).
 
 ## Creating an issue
 
@@ -10,7 +10,7 @@ To report a new bug or discuss a feature, please open a [new issue](https://gith
 
 ## Reporting a security issue
 
-Please *do not* create public issues for anything security or privacy related. Instead, please refer to the [Security tab](https://github.com/carbon-mapper/platform-public/security) for information on how to properly disclose this to the Carbon Mapper team.
+Please **do not** create public issues for anything security or privacy related. Instead, please refer to the [Security tab](https://github.com/carbon-mapper/platform-public/security/policy) for information on how to properly disclose this to the Carbon Mapper team.
 
 ## Disclaimer
 
