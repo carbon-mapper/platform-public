@@ -1,2 +1,3 @@
 jupyter==1.0.0
 requests==2.32.3
+fiona==1.9.6
