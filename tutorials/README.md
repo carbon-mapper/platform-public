@@ -2,7 +2,7 @@
 
 Tutorials offer information for and examples of working with [Carbon Mapper](https://carbonmapper.org/)'s
 [platform API](https://api.carbonmapper.org/). Refer to the
-[platform API documentation](https://api.platform.carbonmapper.org/api/v1/docs) for technical API details.
+[platform API documentation](https://api.carbonmapper.org/api/v1/docs) for technical API details.
 
 # Using the Tutorials
 
