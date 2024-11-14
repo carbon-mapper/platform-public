@@ -1,5 +1,0 @@
-jupyter==1.0.0
-requests==2.32.3
-fiona==1.9.6
-pickleshare==0.7.5
-pystac-client==0.8.3
