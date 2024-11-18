@@ -27,7 +27,8 @@ user@hostname:./platform_public$ jupyter notebook
 
 Many platform API endpoints require authentication. Some endpoints may return different results depending on
 authentication status and the token's scopes. A platform account is required to obtain an API access token. Users
-without accounts are encouraged to [register](https://platform.carbonmapper.org/account/register/) for an account.
+without accounts are encouraged to [register](https://platform.carbonmapper.org/account/register/) for an account. The
+tutorials are written with the assumption that the user has active platform account credentials.
 
 ## Obtaining a Scoped Token Using the Platform Website
 
