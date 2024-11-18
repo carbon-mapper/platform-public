@@ -6,9 +6,20 @@ Tutorials offer information for and examples of working with [Carbon Mapper](htt
 
 # Using the Tutorials
 
+## Installing Jupyter Notebook
+
+Refer to Jupyter's official [Installing Jupyter](https://jupyter.org/install) page for information about installing
+Jupyter Notebook. A virtual environment may be required before installation, depending on the platform Notebook is
+installed to. Refer to the official Python documentation for
+[creating virtual environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments).
+
+## Accessing the tutorials
+
 From within the _platform_public_ project root directory, run `jupyter notebook`:
 
 ```bash
+# Activate the virtual environment if required
+user@hostname:./platform_public$ source <venv_dir>/bin/activate
 user@hostname:./platform_public$ jupyter notebook
 ```
 
