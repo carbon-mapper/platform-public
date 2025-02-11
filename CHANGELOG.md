@@ -33,7 +33,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 ## Quantification Products
 ### TAN 
 #### CH4
-##### L2b (collection: l2b-ch4-mfa-v2)
+##### L2b (collection: l2b-ch4-mfa-v3)
 * Wave length window
   * ****<span style="color:red"> (2100, 2430) </span>****
 * Bad pixel saturation thresholds
@@ -45,7 +45,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * ****<span style="color:red"> Elevation is now queried </span>****
 * Misc Changes
   * **<span style="color:red"> Bilinear resampling used to orthorectify retrieved concentrations (previously this was nearest neighbor) </span>**
-##### L3a (collection: l3a-ch4-mfa-v2)
+##### L3a (collection: l3a-ch4-mfa-v3)
 * Uses dynamic threshold masking 
   * **<span style="color:red"> Updated dynamic mask fit line </span>**
 * Simple IME Method
@@ -61,7 +61,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * Uncertainty is propagated according to uncertainties in wind speed, IME, and plume length 
   * IME uncertainty includes retrieval, masking and length terms 
 #### CO2
-##### L2b (collection: l2b-co2-mfal-v2)
+##### L2b (collection: l2b-co2-mfal-v3)
 * Wave length window
   * **<span style="color:red"> (1960, 2430) </span>**
 * Bad pixel saturation thresholds
@@ -71,7 +71,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * Solar Zenith Angle is queried
   * **<span style="color:red"> Column Water Vapor is now queried </span>**
   * **<span style="color:red"> Elevation is now queried </span>**
-##### L3a (collection: l3a-co2-mfal-v2)
+##### L3a (collection: l3a-co2-mfal-v3)
 * Uses dynamic threshold masking 
   * **<span style="color:red"> Updated dynamic mask fit line </span>**
 * Concentric Circles IME Method
@@ -85,7 +85,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 ### EMIT 
 #### CH4
-##### L2b (collection: l2b-ch4-mfa-v2)
+##### L2b (collection: l2b-ch4-mfa-v3)
 * Wave length window
   * (2100, 2480)
 * Bad pixel saturation thresholds
@@ -98,7 +98,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Misc Changes
   * **<span style="color:red"> Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes </span>**
   * **<span style="color:red"> Projected to UTM to ensure consistency across instruments </span>**
-##### L3a (collection: l3a-ch4-mfa-v2)
+##### L3a (collection: l3a-ch4-mfa-v3)
 * Uses dynamic threshold masking 
   * **<span style="color:red"> Updated dynamic mask fit line</span>**
 * Simple IME Method
@@ -114,7 +114,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * **<span style="color:red"> Uncertainty propagated according to uncertainties in wind speed, IME, and plume length </span>**
   * **<span style="color:red"> IME uncertainty includes retrieval, masking and length terms</span>**
 #### CO2
-##### L2b (collection: L2b-co2-mfal-v2)
+##### L2b (collection: L2b-co2-mfal-v3)
 **<span style="color:red"> This is a change from previously used mfa to mfal products </span>**
 
 * Wave length windows
@@ -129,7 +129,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Misc Changes
   * **<span style="color:red"> Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes</span>**
   * **<span style="color:red"> Projected to UTM to ensure consistency across instruments</span>**
-##### L3a (collection: l3a-co2-mfal-v2)
+##### L3a (collection: l3a-co2-mfal-v3)
 * Uses dynamic threshold masking 
   * **<span style="color:red"> Updated dynamic mask fit line</span>**
 * Concentric Circles IME Method
@@ -145,7 +145,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 
 ### AV3 
 #### CH4
-##### L2b (collection: l2b-ch4-mfa-v2)
+##### L2b (collection: l2b-ch4-mfa-v3)
 * Wave length window
   * (2100, 2480)
 * Bad pixel saturation thresholds
@@ -153,7 +153,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * 2400-2500nm range: Threshold of 1
 * Unit Absorption Spectrum 
   * Solar Zenith Angle, Column Water Vapor, and Elevation are queried
-##### L3a (collection: l3a-ch4-mfa-v2)
+##### L3a (collection: l3a-ch4-mfa-v3)
 * Uses dynamic threshold masking 
 * Simple IME Method
   * Maximum Fetch is 284m
@@ -165,7 +165,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * Uncertainty propagated according to uncertainties in wind speed, IME, and plume length 
   * IME uncertainty includes retrieval, masking and length terms
 #### CO2
-##### L2b (collection: l2b-co2-mfal-v2)
+##### L2b (collection: l2b-co2-mfal-v3)
 * Wave length windows
   * (1860, 2190)
 * Bad pixel saturation thresholds
@@ -173,7 +173,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * 2400-2500nm range: Threshold of 1
 * Unit Absorption Spectrum 
   * Solar Zenith Angle, Column Water Vapor, and Elevation are queried
-##### L3a (collection: l3a-co2-mfal-v2)
+##### L3a (collection: l3a-co2-mfal-v3)
 * Uses dynamic threshold masking 
 * Concentric Circles IME Method
   * Maximum Fetch is 284m
@@ -185,7 +185,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 ### GAO & ANG 
 #### CH4
-##### L2b (collection: l2b-ch4-mf-v2)
+##### L2b (collection: l2b-ch4-mf-v3)
 * Wave length window
   * (2100, 2480)
 * Bad pixel saturation thresholds
@@ -193,7 +193,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * **<span style="color:red"> 2400-2500nm range: Threshold of 1 </span>**
 * Misc Changes
   * **<span style="color:red"> Rotation has been removed and rasters are now oriented northward </span>**
-##### L3a (collection: l3a-ime-ch2-mf-v2)
+##### L3a (collection: l3a-ime-ch2-mf-v3)
 * Uses static ppm-m threshold
   * 1000ppm-m
 * Concentric Circles IME Method
@@ -207,7 +207,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 #### CO2
-##### L2b (collection: l2b-co2-mfal-v2)
+##### L2b (collection: l2b-co2-mfal-v3)
 **<span style="color:red"> This is a change from previously used mfa to mfal products </span>**
 
 * Wave length windows
@@ -222,7 +222,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Misc Changes
   * **<span style="color:red"> Rotation has been removed and rasters are now oriented northward </span>**
 
-##### L3a (collection: l3a-co2-mfal-v2)
+##### L3a (collection: l3a-co2-mfal-v3)
 * Uses dynamic threshold masking 
   * **<span style="color:red"> Changed dynamic mask fit line </span>**
 * Concentric Circles IME Method
@@ -235,8 +235,10 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * **<span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location</span>**
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
+## Visualization Products
+* No changes 
 
-## Version 2 (Visualization Products Only) <a name="version2"></a>
+# Version 2 (Visualization Products Only) <a name="version2"></a>
 ### l2b-rgb-v2 
 * Implemented adaptive histogram stretching of radiance-based RGB
 * Rotation has been removed from airborne products, and rasters are now oriented northward
