@@ -239,12 +239,12 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * No changes 
 
 # Version 2 (Visualization Products Only) <a name="version2"></a>
-### l2b-rgb-v2 
+##### L2b (collection: l2b-rgb-v2)
 * Implemented adaptive histogram stretching of radiance-based RGB
 * Rotation has been removed from airborne products, and rasters are now oriented northward
 * Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes
 * Projected to UTM to ensure consistency across instruments
-### l3a-vis-ch4-mf-v1 and l3a-vis-ch4-mf-v002
+##### L3a (collection: l3a-vis-ch4-mf-v2, l3a-vis-ch4-mf-v002)
 * Increased minimum concentration for colormap
 * Made concentrations use the same extent as plume visualization
 * Replaced vector plume thresholding with Gaussian blur process
@@ -258,21 +258,20 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Updated default crop size for PNG images
 * Fix PNG rotation bug
 * Replace distance-based subsetting with pixel-based to allow for EMIT
-## Non-Quantification Supplemental Products:
-* l2b-ch4-mfm-v2 (only produced for airborne scenes)
-* l2b-ch4-mfma-v2
-* l2b-co2-mfa-v2 
-* l2b-co2-mfma-v2
+#### Non-Quantification Supplemental Products:
+##### L2b (collection: l2b-ch4-mfm-v2)
+Only produced for airborne scenes
+
+##### L2b (collections: l2b-ch4-mfma-v2, l2b-co2-mfa-v2, l2b-co2-mfma-v2)
+No Change
 
 # Version 1 <a name="version1"></a>
-## Level 3 Products (L3) - Fully Processed Plumes
+##### L3a (collections: l3a-ime-ch4-mfa-v1, l3a-ime-co2-mfal-v1)
 Derived from CMFs processed with or without the above improvements or processed in the field using unspecified code.
 Quantification Products
-### Tanager (TAN)
-* l3a-ime-ch4-mfa-v1
-* l3a-ime-co2-mfal-v1
 
-### EMIT (collection: l3a-ime-ch4-mfa-v1)
+### EMIT
+##### L3a (collection: l3a-ime-ch4-mfa-v1)
 * The radii increase of each concentric circle IME calculation has been changed to a constant of 1 pixel. 
 * Max fetch distances are strictly calculated instead of using the nearest convex hull point distance.
 * The use of a set 150x150 pixel tile crop for small enhancements has been removed.
