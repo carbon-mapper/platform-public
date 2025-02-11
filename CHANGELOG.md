@@ -2,26 +2,26 @@
 
 Carbon Mapper is committed to continuously improving its scientific algorithms, applying updates to both future and historical data when necessary. This practice, known as “reprocessing,” is a widely used approach in scientific data management that ensures data remain accurate, consistent, and aligned with the latest scientific understanding, algorithms, and calibration standards. Reprocessing ensures consistency across data versions and sources by harmonizing datasets from different missions and instruments. This is crucial for creating seamless time series that support accurate analysis and monitoring of long-term trends.
 
-All updates to Carbon Mapper data are assigned a version number for each product level, with a detailed change log summarizing modifications and documenting the state of the corresponding algorithms. Each version reflects rigorously vetted algorithm improvements to enhance accuracy and reduce observation uncertainty. Our Algorithm Theoretical Basis Document contains algorithm justification for our most recent algorithms and citations with detailed overviews of our product levels and algorithms associated with each product level.
+All updates to Carbon Mapper data are assigned a version number for each product level, with a detailed change log summarizing modifications and documenting the state of the corresponding algorithms. Each version reflects rigorously vetted algorithm improvements to enhance accuracy and reduce observation uncertainty. Our [Algorithm Theoretical Basis Document (ATBD)](https://assets.carbonmapper.org/documents/L3_L4%20Algorithm%20Theoretical%20Basis%20Document_formatted_10-24-24.pdf) contains algorithm justification for our most recent algorithms and citations with detailed overviews of our product levels and algorithms associated with each product level.
 
 We periodically reprocess historical data to ensure that past datasets benefit from the most recent, validated, and reliable algorithms. Previous versions of historical data remain accessible to users who may need them for specific applications or comparisons. Each historical reprocessing builds on the strengths of our existing algorithms, further enhancing data accuracy and refining precision to provide even more reliable emission estimates.
 
 * The Summary table has an overview of published data versions.
-* The Detailed Collection Impact Notes thoroughly explain how algorithms changed in a specified collection and what instruments and gases are impacted.
+* The Detailed Version Notes thoroughly explain how algorithms changed in a specified collection and what instruments and gases are impacted.
 * The FAQ section answers questions about how to use this change log and how to identify what version of a product you are looking at.
 
 # Summary Table
-Note: Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
+**NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
-| **Version**             |    **High Level Notes**     | **Date Available** | **Processing SW**         |
-|:------------------------|:---------------------------:|:-------------------|:--------------------------|
-| jpl                     |    Data processed by JPL    | Aug 2016           | NA                        |
-| v0                      |   Initial data algorithms   | March 2023         | No version data available |
-| [v1 (j001^)](#version1) |                             | July 2023          | 0.4.0<                    |
-| [v2 (j002^)](#version2) | Visualization products only | Jan 2024           | 0.21.0<                   |
-| [v3 (j3^)](#version3)   |                             | Feb 2025           | 3.0.0<                    |
+| **Version**                                  |                 **High Level Notes**                  | **Date Available** | **Processing SW**         |
+|:---------------------------------------------|:-----------------------------------------------------:|:-------------------|:--------------------------|
+| jpl                                          | Data processed by NASA JPL (Jet Propulsion Laboratory | Aug 2016           | NA                        |
+| v0                                           |                Initial data algorithms                | March 2023         | No version data available |
+| [v1 (j001<sup>1</sup>)](#version1)           |                                                       | July 2023          | \> 0.4.0                  |
+| [v2 (j002<sup>1</sup>)](#version2)           |              Visualization products only              | Jan 2024           | \> 0.21.0                 |
+| [v3 (j3<sup>1</sup>)](#version3)             |                                                       | Feb 2025           | \> 3.0.0                  |
 
-**^** versions that begin with j, were processed by JPL using the same algorithms as the associated v<#> version.
+<sup>1</sup> versions that begin with j, were processed by NASA JPL using the same algorithms as the associated v<#> version.
 
 # Detailed Version Notes
 Refer to the ATBD for an in depth scientific justification of algorithms. The L2B ATBD includes details about filter types (MF/MFA/MFAL) and Unit Absorption Spectrum. The L3/L4 ATBD includes details about dynamic vs static retrievals, simple vs concentric circles IME, and maximum Fetch)
@@ -31,7 +31,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 # Version 3 <a name="version3"></a>
 
 ## Quantification Products
-### TAN 
+### Tanager (TAN) 
 #### CH4
 ##### L2b (collection: l2b-ch4-mfa-v3)
 * Wave length window
@@ -143,7 +143,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 
-### AV3 
+### AVIRIS-3 (AV3) 
 #### CH4
 ##### L2b (collection: l2b-ch4-mfa-v3)
 * Wave length window
@@ -183,7 +183,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * ECMWF_IFS or ERA5 from OpenMeteo globally
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
-### GAO & ANG 
+### Global Airborne Observatory (GAO) & AVIRIS-NextGeneration (ANG) 
 #### CH4
 ##### L2b (collection: l2b-ch4-mf-v3)
 * Wave length window
@@ -268,7 +268,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 ## Level 3 Products (L3) - Fully Processed Plumes
 Derived from CMFs processed with or without the above improvements or processed in the field using unspecified code.
 Quantification Products
-### TAN
+### Tanager (TAN)
 * l3a-ime-ch4-mfa-v1
 * l3a-ime-co2-mfal-v1
 
