@@ -26,7 +26,7 @@ Note: Version 2 is guaranteed to include the changes listed under version 2 prod
 # Detailed Version Notes
 Refer to the ATBD for an in depth scientific justification of algorithms. The L2B ATBD includes details about filter types (MF/MFA/MFAL) and Unit Absorption Spectrum. The L3/L4 ATBD includes details about dynamic vs static retrievals, simple vs concentric circles IME, and maximum Fetch)
 
-**NOTE**: <span style="color:red"> **Red, bolded text** </span> indicates changes to algorithms in current version
+**NOTE**: **<span style="color:red"> **bolded text** </span>** indicates changes to algorithms in current version
 
 # Version 3 <a name="version3"></a>
 
@@ -35,23 +35,23 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 #### CH4
 ##### L2b (collection: l2b-ch4-mfa-v2)
 * Wave length window
-  * <span style="color:red"> (2100, 2430) </span>
+  * ****<span style="color:red"> (2100, 2430) </span>****
 * Bad pixel saturation thresholds
   * 2092-2098nm range: Threshold of 3
-  * <span style="color:red"> 2400-2500nm range: Threshold of 1 </span>
+  * ****<span style="color:red"> 2400-2500nm range: Threshold of 1 </span>****
 * Unit Absorption Spectrum 
   * Solar Zenith Angle is queried
-  * <span style="color:red"> Column Water Vapor is now queried </span>
-  * <span style="color:red"> Elevation is now queried </span>
+  * ****<span style="color:red"> Column Water Vapor is now queried </span>****
+  * ****<span style="color:red"> Elevation is now queried </span>****
 * Misc Changes
-  * <span style="color:red"> Bilinear resampling used to orthorectify retrieved concentrations (previously this was nearest neighbor) </span>
+  * **<span style="color:red"> Bilinear resampling used to orthorectify retrieved concentrations (previously this was nearest neighbor) </span>**
 ##### L3a (collection: l3a-ch4-mfa-v2)
 * Uses dynamic threshold masking 
-  * <span style="color:red"> Updated dynamic mask fit line </span>
+  * **<span style="color:red"> Updated dynamic mask fit line </span>**
 * Simple IME Method
   * Maximum Fetch is 2500m
-  * <span style="color:red"> Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length </span>
-  * <span style="color:red"> Include center pixel for IME and plume length quantification </span>
+  * **<span style="color:red"> Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length </span>**
+  * **<span style="color:red"> Include center pixel for IME and plume length quantification </span>**
 
 ##### L4a
 * Wind products used
@@ -63,20 +63,20 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 #### CO2
 ##### L2b (collection: l2b-co2-mfal-v2)
 * Wave length window
-  * <span style="color:red"> (1960, 2430) </span>
+  * **<span style="color:red"> (1960, 2430) </span>**
 * Bad pixel saturation thresholds
   * 2092-2098nm range: Threshold of 3
-  * <span style="color:red"> 2400-2500nm range: Threshold of 1 </span>
+  * **<span style="color:red"> 2400-2500nm range: Threshold of 1 </span>**
 * Unit Absorption Spectrum 
   * Solar Zenith Angle is queried
-  * <span style="color:red"> Column Water Vapor is now queried </span>
-  * <span style="color:red"> Elevation is now queried </span>
+  * **<span style="color:red"> Column Water Vapor is now queried </span>**
+  * **<span style="color:red"> Elevation is now queried </span>**
 ##### L3a (collection: l3a-co2-mfal-v2)
 * Uses dynamic threshold masking 
-  * <span style="color:red"> Updated dynamic mask fit line </span>
+  * **<span style="color:red"> Updated dynamic mask fit line </span>**
 * Concentric Circles IME Method
   * Maximum Fetch is 2500m
-  * <span style="color:red"> Include center pixel for IME and plume length quantification </span>
+  * **<span style="color:red"> Include center pixel for IME and plume length quantification </span>**
 ##### L4a
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -90,56 +90,56 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * (2100, 2480)
 * Bad pixel saturation thresholds
   * 2092-2098nm range: Threshold of 2
-  * <span style="color:red"> 2400-2500nm range: Threshold of 1 </span>
+  * **<span style="color:red"> 2400-2500nm range: Threshold of 1 </span>**
 * Unit Absorption Spectrum 
   * Solar Zenith Angle is queried
-  * <span style="color:red"> Column Water Vapor is now queried </span>
-  * <span style="color:red"> Elevation is now queried </span>
+  * **<span style="color:red"> Column Water Vapor is now queried </span>**
+  * **<span style="color:red"> Elevation is now queried </span>**
 * Misc Changes
-  * <span style="color:red"> Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes </span>
-  * <span style="color:red"> Projected to UTM to ensure consistency across instruments </span>
+  * **<span style="color:red"> Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes </span>**
+  * **<span style="color:red"> Projected to UTM to ensure consistency across instruments </span>**
 ##### L3a (collection: l3a-ch4-mfa-v2)
 * Uses dynamic threshold masking 
-  * <span style="color:red"> Updated dynamic mask fit line
+  * **<span style="color:red"> Updated dynamic mask fit line</span>**
 * Simple IME Method
-  * <span style="color:red"> Maximum Fetch is 2500m
-  * <span style="color:red"> Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length
-  * <span style="color:red"> Include center pixel for IME and plume length quantification
+  * **<span style="color:red"> Maximum Fetch is 2500m</span>**
+  * **<span style="color:red"> Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length</span>**
+  * **<span style="color:red"> Include center pixel for IME and plume length quantification</span>**
 ##### L4a
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
   * ECMWF_IFS or ERA5 from OpenMeteo globally
-  * <span style="color:red">  HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location
+  * **<span style="color:red">  HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location</span>**
 * Emission Quantification Uncertainty
-  * <span style="color:red"> Uncertainty propagated according to uncertainties in wind speed, IME, and plume length 
-  * <span style="color:red"> IME uncertainty includes retrieval, masking and length terms
+  * **<span style="color:red"> Uncertainty propagated according to uncertainties in wind speed, IME, and plume length </span>**
+  * **<span style="color:red"> IME uncertainty includes retrieval, masking and length terms</span>**
 #### CO2
 ##### L2b (collection: L2b-co2-mfal-v2)
-<span style="color:red"> This is a change from previously used mfa to mfal products </span>
+**<span style="color:red"> This is a change from previously used mfa to mfal products </span>**
 
 * Wave length windows
-  * <span style="color:red"> (1860, 2190)
+  * **<span style="color:red"> (1860, 2190)</span>**
 * Bad pixel saturation thresholds
-  * <span style="color:red"> 2092-2098nm range: Threshold of 2
-  * <span style="color:red"> 2400-2500nm range: Threshold of 1
+  * **<span style="color:red"> 2092-2098nm range: Threshold of 2</span>**
+  * **<span style="color:red"> 2400-2500nm range: Threshold of 1</span>**
 * Unit Absorption Spectrum 
   * Solar Zenith Angle is queried
-  * <span style="color:red"> Column Water Vapor is now queried
-  * <span style="color:red"> Elevation is now queried
+  * **<span style="color:red"> Column Water Vapor is now queried</span>**
+  * **<span style="color:red"> Elevation is now queried</span>**
 * Misc Changes
-  * <span style="color:red"> Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes
-  * <span style="color:red"> Projected to UTM to ensure consistency across instruments
+  * **<span style="color:red"> Uses correct geotransform from EMIT NetCDF metadata to eliminate small gaps between scenes</span>**
+  * **<span style="color:red"> Projected to UTM to ensure consistency across instruments</span>**
 ##### L3a (collection: l3a-co2-mfal-v2)
 * Uses dynamic threshold masking 
-  * <span style="color:red"> Updated dynamic mask fit line
+  * **<span style="color:red"> Updated dynamic mask fit line</span>**
 * Concentric Circles IME Method
-  * <span style="color:red"> Maximum Fetch is 2500m
-  * <span style="color:red"> Include center pixel for IME and plume length quantification
+  * **<span style="color:red"> Maximum Fetch is 2500m</span>**
+  * **<span style="color:red"> Include center pixel for IME and plume length quantification</span>**
 ##### L4a
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
   * ECMWF_IFS or ERA5 from OpenMeteo globally
-  * <span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location
+  * **<span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location </span>**
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 
@@ -190,49 +190,49 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * (2100, 2480)
 * Bad pixel saturation thresholds
   * 2092-2098nm range: Threshold of 4
-  * <span style="color:red"> 2400-2500nm range: Threshold of 1
+  * **<span style="color:red"> 2400-2500nm range: Threshold of 1 </span>**
 * Misc Changes
-  * <span style="color:red"> Rotation has been removed and rasters are now oriented northward
+  * **<span style="color:red"> Rotation has been removed and rasters are now oriented northward </span>**
 ##### L3a (collection: l3a-ime-ch2-mf-v2)
 * Uses static ppm-m threshold
   * 1000ppm-m
 * Concentric Circles IME Method
   * Max Fetch 284m
-  * <span style="color:red"> Include center pixel for IME and plume length quantification
+  * **<span style="color:red"> Include center pixel for IME and plume length quantification </span>**
 ##### L4a
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
   * ECMWF_IFS or ERA5 from OpenMeteo globally
-  * <span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location
+  * **<span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location </span>**
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 #### CO2
 ##### L2b (collection: l2b-co2-mfal-v2)
-<span style="color:red"> This is a change from previously used mfa to mfal products </span>
+**<span style="color:red"> This is a change from previously used mfa to mfal products </span>**
 
 * Wave length windows
   * (1860, 2190)
 * Bad pixel saturation thresholds
-  * <span style="color:red"> 2092-2098nm range: Threshold of 4 </span>
-  * <span style="color:red"> 2400-2500nm range: Threshold of 1 </span>
+  * **<span style="color:red"> 2092-2098nm range: Threshold of 4 </span>**
+  * **<span style="color:red"> 2400-2500nm range: Threshold of 1 </span>**
 * Unit Absorption Spectrum 
   * Solar Zenith Angle is queried
-  * <span style="color:red"> Column Water Vapor is now queried </span>
-  * <span style="color:red"> Elevation is now queried </span>
+  * **<span style="color:red"> Column Water Vapor is now queried </span>**
+  * **<span style="color:red"> Elevation is now queried </span>**
 * Misc Changes
-  * <span style="color:red"> Rotation has been removed and rasters are now oriented northward </span>
+  * **<span style="color:red"> Rotation has been removed and rasters are now oriented northward </span>**
 
 ##### L3a (collection: l3a-co2-mfal-v2)
 * Uses dynamic threshold masking 
-  * <span style="color:red"> Changed dynamic mask fit line
+  * **<span style="color:red"> Changed dynamic mask fit line </span>**
 * Concentric Circles IME Method
   * Maximum Fetch is 284m
-  * <span style="color:red"> Include center pixel for IME and plume length quantification
+  * **<span style="color:red"> Include center pixel for IME and plume length quantification </span>**
 ##### L4a
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
   * ECMWF_IFS or ERA5 from OpenMeteo globally
-  * <span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location
+  * **<span style="color:red"> HRRR winds are spatially averaged to match the resolution of ECMWF_IFS allowing for cross comparisons of plume uncertainties regardless of detection location</span>**
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 
