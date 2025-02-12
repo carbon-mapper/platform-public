@@ -11,17 +11,18 @@ We periodically reprocess historical data to ensure that past datasets benefit f
 * The FAQ section answers questions about how to use this change log and how to identify what version of a product you are looking at.
 
 # Summary Table
+
+| **Version**                           |                                                                  **High Level Notes**                                                                   | **Date Available** | **Processing SW**         |
+|:--------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
+| jpl                                   |                                                  Data processed by NASA JPL (Jet Propulsion Laboratory                                                  | Aug 2016           | No version data available |
+| v0                                    |                                                                 Initial data algorithms                                                                 | March 2023         | No version data available |
+| [v1](#version1)           |                                                    Heterogenous algorithm iterations across sensors                                                     | July 2023          | \> 0.4.0                  |
+| [v2](#version2)           |                                                               Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
+| [v3](#version3)           | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations  | Feb 2025           | \> 3.0.0                  |
+
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
-| **Version**                                  |                                                                  **High Level Notes**                                                                   | **Date Available** | **Processing SW**         |
-|:---------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
-| jpl                                          |                                                  Data processed by NASA JPL (Jet Propulsion Laboratory                                                  | Aug 2016           | No version data available |
-| v0                                           |                                                                 Initial data algorithms                                                                 | March 2023         | No version data available |
-| [v1 (j001<sup>1</sup>)](#version1)           |                                                    Heterogenous algorithm iterations across sensors                                                     | July 2023          | \> 0.4.0                  |
-| [v2 (j002<sup>1</sup>)](#version2)           |                                                               Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
-| [v3 (j3<sup>1</sup>)](#version3)             | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations  | Feb 2025           | \> 3.0.0                  |
-
-<sup>1</sup> versions that begin with j, were processed by NASA JPL using the same algorithms as the associated v<#> version.
+**NOTE** Versions that begin with j, were processed by NASA JPL using the same algorithms as the associated v<#> version.
 
 # Detailed Version Notes
 Refer to the ATBD for an in depth scientific justification of algorithms. The L2B ATBD includes details about filter types (MF/MFA/MFAL) and Unit Absorption Spectrum. The L3/L4 ATBD includes details about dynamic vs static retrievals, simple vs concentric circles IME, and maximum Fetch)
