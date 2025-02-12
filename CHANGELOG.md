@@ -24,6 +24,8 @@ We periodically reprocess historical data to ensure that past datasets benefit f
 
 **NOTE** Versions that begin with j, were processed by NASA JPL using the same algorithms as the associated v<#> version.
 
+**NOTE** Quantification products move straight from v1 to v3 (ie no v2 data exists for quantification products)
+
 # Detailed Version Notes
 Refer to the ATBD for an in depth scientific justification of algorithms. The L2B ATBD includes details about filter types (MF/MFA/MFAL) and Unit Absorption Spectrum. The L3/L4 ATBD includes details about dynamic vs static retrievals, simple vs concentric circles IME, and maximum Fetch)
 
