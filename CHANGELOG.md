@@ -2,7 +2,7 @@
 
 Carbon Mapper is committed to continuously improving its scientific algorithms, applying updates to both future and historical data when necessary. This practice, known as “reprocessing,” is a widely used approach in scientific data management that ensures data remain accurate, consistent, and aligned with the latest scientific understanding, algorithms, and calibration standards. Reprocessing ensures consistency across data versions and sources by harmonizing datasets from different missions and instruments. This is crucial for creating seamless time series that support accurate analysis and monitoring of long-term trends.
 
-All updates to Carbon Mapper data are assigned a version number for each product level, with a detailed change log summarizing modifications and documenting the state of the corresponding algorithms. Each version reflects rigorously vetted algorithm improvements to enhance accuracy and reduce observation uncertainty. Our [Algorithm Theoretical Basis Document (ATBD)](https://assets.carbonmapper.org/documents/L3_L4%20Algorithm%20Theoretical%20Basis%20Document_formatted_10-24-24.pdf) contains algorithm justification for our most recent algorithms and citations with detailed overviews of our product levels and algorithms associated with each product level.
+All updates to Carbon Mapper data are assigned a version number for each product level, with a detailed change log summarizing modifications and documenting the state of the corresponding algorithms. Each version reflects rigorously vetted algorithm improvements to enhance accuracy and reduce observation uncertainty. Our [Algorithm Theoretical Basis Document (ATBD)](https://assets.carbonmapper.org/documents/L3_L4%20Algorithm%20Theoretical%20Basis%20Document_formatted_10-24-24.pdf) contains algorithm justification for our most recent algorithms and citations with detailed overviews of our product levels and algorithms associated with each product level. Additional information about each product level can be found in our [Product Guide]( https://carbonmapper.org/articles/product-guide).
 
 We periodically reprocess historical data to ensure that past datasets benefit from the most recent, validated, and reliable algorithms. Previous versions of historical data remain accessible to users who may need them for specific applications or comparisons. Each historical reprocessing builds on the strengths of our existing algorithms, further enhancing data accuracy and refining precision to provide even more reliable emission estimates.
 
@@ -13,13 +13,13 @@ We periodically reprocess historical data to ensure that past datasets benefit f
 # Summary Table
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
-| **Version**                                  |                 **High Level Notes**                  | **Date Available** | **Processing SW**         |
-|:---------------------------------------------|:-----------------------------------------------------:|:-------------------|:--------------------------|
-| jpl                                          | Data processed by NASA JPL (Jet Propulsion Laboratory | Aug 2016           | NA                        |
-| v0                                           |                Initial data algorithms                | March 2023         | No version data available |
-| [v1 (j001<sup>1</sup>)](#version1)           |                                                       | July 2023          | \> 0.4.0                  |
-| [v2 (j002<sup>1</sup>)](#version2)           |              Visualization products only              | Jan 2024           | \> 0.21.0                 |
-| [v3 (j3<sup>1</sup>)](#version3)             |                                                       | Feb 2025           | \> 3.0.0                  |
+| **Version**                                  |                                                                  **High Level Notes**                                                                   | **Date Available** | **Processing SW**         |
+|:---------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
+| jpl                                          |                                                  Data processed by NASA JPL (Jet Propulsion Laboratory                                                  | Aug 2016           | No version data available |
+| v0                                           |                                                                 Initial data algorithms                                                                 | March 2023         | No version data available |
+| [v1 (j001<sup>1</sup>)](#version1)           |                                                    Heterogenous algorithm iterations across sensors                                                     | July 2023          | \> 0.4.0                  |
+| [v2 (j002<sup>1</sup>)](#version2)           |                                                               Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
+| [v3 (j3<sup>1</sup>)](#version3)             | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations  | Feb 2025           | \> 3.0.0                  |
 
 <sup>1</sup> versions that begin with j, were processed by NASA JPL using the same algorithms as the associated v<#> version.
 
