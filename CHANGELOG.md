@@ -36,7 +36,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 ## Quantification Products
 
 ### Tanager (TAN) 
-#### CH4
+<details open><summary> CH4 </summary>
 
 <details open>
   <summary> L2b (collection: l2b-ch4-mfa-v3) </summary>
@@ -66,7 +66,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-ch4-mfa-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -76,8 +76,9 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * IME uncertainty includes retrieval, masking and length terms 
 
 </details>
+</details>
 
-#### CO2
+<details open><summary> CO2 </summary>
 <details open>
   <summary> L2b (collection: l2b-co2-mfal-v3) </summary>
 
@@ -104,7 +105,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-co2-mfal-v3)</summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -112,9 +113,10 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 </details>
+</details>
 
 ### EMIT 
-#### CH4
+<details open><summary> CH4 </summary> 
 <details open>
   <summary> L2b (collection: l2b-ch4-mfa-v3) </summary>
 
@@ -144,7 +146,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-ch4-mfa-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -154,8 +156,9 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * **<span style="color:red"> Uncertainty propagated according to uncertainties in wind speed, IME, and plume length </span>**
   * **<span style="color:red"> IME uncertainty includes retrieval, masking and length terms</span>**
 </details>
+</details>
 
-#### CO2
+<details open><summary> CO2 </summary>
 <details open>
   <summary> L2b (collection: L2b-co2-mfal-v3) </summary>
 
@@ -186,7 +189,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-co2-mfal-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -195,9 +198,10 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 </details>
+</details>
 
 ### AVIRIS-3 (AV3) 
-#### CH4
+<details open><summary> CH4 </summary>
 <details open>
   <summary>  L2b (collection: l2b-ch4-mfa-v3) </summary>
 
@@ -219,7 +223,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-ch4-mfa-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -228,8 +232,9 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
   * Uncertainty propagated according to uncertainties in wind speed, IME, and plume length 
   * IME uncertainty includes retrieval, masking and length terms
 </details>
+</details>
 
-#### CO2
+<details open><summary> CO2 </summary>
 <details open>
   <summary>  L2b (collection: l2b-co2-mfal-v3) </summary>
 
@@ -251,7 +256,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-co2-mfal-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -259,9 +264,10 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 </details>
+</details>
 
 ### Global Airborne Observatory (GAO) & AVIRIS-NextGeneration (ANG) 
-#### CH4
+<details open><summary> CH4 </summary>
 <details open>
   <summary>  L2b (collection: l2b-ch4-mf-v3) </summary>
 
@@ -275,7 +281,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L3a (collection: l3a-ime-ch2-mf-v3) </summary>
+  <summary>  L3a (collection: l3a-ime-ch4-mf-v3) </summary>
 
 * Uses static ppm-m threshold
   * 1000ppm-m
@@ -285,7 +291,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary>  L4a </summary>
+  <summary>  L4a (collection: l4a-ch4-mf-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -294,8 +300,9 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
 </details>
+</details>
 
-#### CO2
+<details open><summary> CO2 </summary>
 <details open>
   <summary> L2b (collection: l2b-co2-mfal-v3) </summary>
 
@@ -326,7 +333,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 </details>
 
 <details open>
-  <summary> L4a </summary>
+  <summary> L4a (collection: l4a-co2-mfal-v3) </summary>
 
 * Wind products used
   * HRRR data archive for plumes within the HRRR coverage area 
@@ -335,6 +342,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The L2
 * Emission Quantification Uncertainty
   * Uncertainty propagated according to uncertainties in wind speed and in the ratio of IME divided by plume length. IME/L is treated as a signal variable.
  </details>
+</details>
 
 ## Visualization Products
 * No changes 
