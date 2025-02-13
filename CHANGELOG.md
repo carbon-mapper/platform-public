@@ -389,10 +389,11 @@ No Change
 
 
 # Version 1 <a name="version1"></a>
+## Quantification Products
+### Global Airborne Observatory (GAO) & AVIRIS-NextGeneration (ANG)
 <details open>
   <summary>  L3a (collections: l3a-ime-ch4-mfa-v1, l3a-ime-co2-mfal-v1) </summary>
 Derived from CMFs processed with or without the above improvements or processed in the field using unspecified code.
-Quantification Products
 </details>
 
 ### EMIT
