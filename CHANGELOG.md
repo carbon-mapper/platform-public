@@ -15,7 +15,7 @@ We periodically reprocess historical data to ensure that past datasets benefit f
 | **Version**     |                                                                  **High Level Notes**                                                                  | **Date Available** | **Processing SW**         |
 |:----------------|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
 | jpl             |                                                 Data processed by NASA JPL (Jet Propulsion Laboratory)                                                 | Aug 2016           | No version data available |
-| v0              |                                                                Initial data algorithms                                                                 | March 2023         | No version data available |
+| [v0](#version0) |                                                                Initial data algorithms                                                                 | March 2023         | No version data available |
 | [v1](#version1) |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |
 | [v2](#version2) |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
 | [v3](#version3) | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
@@ -390,12 +390,12 @@ No Change
 
 # Version 1 <a name="version1"></a>
 ## Quantification Products
-### Global Airborne Observatory (GAO) & AVIRIS-NextGeneration (ANG)
-<details open>
-  <summary>  L3a (collections: l3a-ime-ch4-mfa-v1, l3a-ime-co2-mfal-v1) </summary>
-Derived from CMFs processed with or without the above improvements or processed in the field using unspecified code.
-</details>
 
+All L2b, L3a, and L4a products in version 1 contain incremental changes that are fully documented and guaranteed to be included in version 3.
+
+
+# Version 0 <a name="version0"></a>
+## Quantification Products
 ### EMIT
 <details open>
   <summary>  L3a (collection: l3a-ime-ch4-mfa-v1) </summary>
