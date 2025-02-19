@@ -165,7 +165,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 **<span style="color:red"> This is a change from previously used mfa to mfal products </span>**
 
 * Wave length windows
-  * **<span style="color:red"> (1860, 2190)</span>**
+  * **<span style="color:red"> (1960, 2430) </span>**
 * Bad pixel saturation thresholds
   * **<span style="color:red"> 2092-2098nm range: Threshold of 2</span>**
   * **<span style="color:red"> 2400-2500nm range: Threshold of 1</span>**
