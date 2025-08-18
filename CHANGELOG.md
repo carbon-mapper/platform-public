@@ -4,7 +4,11 @@ Carbon Mapper is committed to continuously improving its scientific algorithms, 
 
 All updates to Carbon Mapper data are assigned a version number for each product level, with a detailed version log summarizing modifications and documenting the state of the corresponding algorithms. Each version reflects rigorously vetted algorithm improvements to enhance accuracy and reduce observation uncertainty. Our [Algorithm Theoretical Basis Document (ATBD)](https://assets.carbonmapper.org/documents/L3_L4%20Algorithm%20Theoretical%20Basis%20Document_formatted_10-24-24.pdf) contains algorithm justification for our most recent algorithms and citations with detailed overviews of our product levels and algorithms associated with each product level. Additional information about each product level can be found in our [Product Guide]( https://carbonmapper.org/articles/product-guide).
 
-We periodically reprocess historical data to ensure that past datasets benefit from the most recent, validated, and reliable algorithms. Previous versions of historical data remain accessible to users who may need them for specific applications or comparisons. Each historical reprocessing builds on the strengths of our existing algorithms, further enhancing data accuracy and refining precision to provide even more reliable emission estimates.
+We periodically reprocess historical data to ensure that past datasets benefit from the most recent, validated, and 
+reliable algorithms. Previous versions of historical data will remain accessible to users who may need them for specific
+applications or comparative purposes via [Carbon Mapper’s STAC API](https://api.carbonmapper.org/api/v1/stac). The STAC 
+API can be used to retrieve previously published versions of data identified by the version number in the STAC collection name.Each historical reprocessing builds on the strengths of our existing algorithms, further 
+enhancing data accuracy and refining precision to provide even more reliable emission estimates.
 
 * The Summary table has an overview of published data versions.
 * The Detailed Version Notes thoroughly explain how algorithms changed in a specified collection and what instruments and gases are impacted.
