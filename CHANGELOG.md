@@ -10,9 +10,9 @@ applications or comparative purposes via [Carbon Mapper’s STAC API](https://ap
 API can be used to retrieve previously published versions of data identified by the version number in the STAC collection name.Each historical reprocessing builds on the strengths of our existing algorithms, further 
 enhancing data accuracy and refining precision to provide even more reliable emission estimates.
 
-* The Summary table has an overview of published data versions.
-* The Detailed Version Notes thoroughly explain how algorithms changed in a specified collection and what instruments and gases are impacted.
-* The FAQ section answers questions about how to use this version log and how to identify what version of a product you are looking at.
+* The [Summary table](#summary-table) has an overview of published data versions.
+* The [Detailed Version Notes](#detailed-version-notes) thoroughly explain how algorithms changed in a specified collection and what instruments and gases are impacted.
+* The [FAQ section](#version-log-faq) answers questions about how to use this version log and how to identify what version of a product you are looking at.
 
 # Summary Table
 
@@ -558,7 +558,7 @@ All L2b, L3a, and L4a products in version 1 contain incremental changes that are
     Carbon Mapper’s STAC API (https://api.carbonmapper.org/api/v1/stac) can be used to retrieve previously published versions of data identified by the version number in the STAC collection name.
     * See our [STAC Search tutorial](./tutorials/stac/search_l4a_ch4_emission.ipynb) for an example of using the STAC api.
       * See below for an example of modifying the above tutorial to search for V1 data: 
-         * Modify the collection id to specify v1 (`"collections": "l4a-ch4-v1"` ) - the modified query parameters would look like:
+         * Modify the collection id to specify v1 (`"collections": "l4a-ch4-mfa-v1"` ) - the modified query parameters would look like:
     ```python
     
     parameters = {
@@ -568,7 +568,7 @@ All L2b, L3a, and L4a products in version 1 contain incremental changes that are
             datetime.strptime("20240101", "%Y%m%d"),  # Exclusive end
         ),
         "query": {"cm:emission": {"gt": 3000}},  # Emissions greater than 3000 kg/hr
-        "collections": "l4a-ch4-v1",
+        "collections": "l4a-ch4-mfa-v1",
     }
     search = catalog.search(**parameters)
     ```
