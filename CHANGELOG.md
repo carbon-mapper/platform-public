@@ -156,6 +156,9 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 ## Quantification Products
 
 ### Tanager (TAN) 
+**NOTE** TAN v3 data includes geolocation updates that were made by Planet due to calibration improvements - this 
+results in some plumes shifting slightly in location compared to previous versions.
+
 <details open><summary> CH4 </summary>
 
 <details open>
