@@ -154,69 +154,53 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 
 ## Detailed Version Impact Table
 
-<style>
-  table {
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-  }
-  .thick-border-right {
-    border-right: 2px solid;
-  }
-.thick-border-bottom {
-    border-bottom: 2px solid;
-  }
-</style>
 
 <table>
   <thead>
     <tr>
-    <th colspan="1" rowspan="2" style="border-right: 2px solid; border-bottom: 2px solid;">Version</th>
-    <th colspan="4" class="thick-border-right">Product Levels Impacted</th>
-    <th colspan="8" class="thick-border-right">Instrument/Gas Impacted</th>
-    <th colspan="1" rowspan="2" class="thick-border-bottom" >Date Available</th>
+    <th colspan="1" rowspan="2">Version</th>
+    <th colspan="4">Product Levels Impacted</th>
+    <th colspan="8">Instrument/Gas Impacted</th>
+    <th colspan="1" rowspan="2">Date Available</th>
     </tr>
     <tr>
-      <th class="thick-border-bottom">L1</th>
-      <th class="thick-border-bottom">L2</th>
-      <th class="thick-border-bottom">L3</th>
-      <th style="border-right: 2px solid; border-bottom: 2px solid;">L4</th>
-      <th class="thick-border-bottom" >TAN CH4</th>
-      <th class="thick-border-bottom">TAN C02</th>
-      <th class="thick-border-bottom">EMIT CH4</th>
-      <th class="thick-border-bottom">EMIT CO2</th>
-      <th class="thick-border-bottom">AV3 CH4</th>
-      <th class="thick-border-bottom">AV3 C02</th>
-      <th class="thick-border-bottom">GAO/ANG CH4</th>
-      <th style="border-right: 2px solid; border-bottom: 2px solid;">GAO/ANG CO2</th>
+      <th>L1</th>
+      <th>L2</th>
+      <th>L3</th>
+      <th>L4</th>
+      <th >TAN CH4</th>
+      <th>TAN C02</th>
+      <th>EMIT CH4</th>
+      <th>EMIT CO2</th>
+      <th>AV3 CH4</th>
+      <th>AV3 C02</th>
+      <th>GAO/ANG CH4</th>
+      <th>GAO/ANG CO2</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="thick-border-right">jpl</td>
+      <td>jpl</td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
-      <td>N/A</td>
-      <td>N/A</td>
+      <td><p>&#10003;</p></td>
       <td>N/A</td>
       <td>N/A</td>
       <td>N/A</td>
       <td>N/A</td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
-        <td>Aug 2016</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>Aug 2016</td>
     </tr>
     <tr>
-      <td class="thick-border-right">V0</td>
+      <td>V0</td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td>N/A</td>
       <td>N/A</td>
       <td>N/A</td>
@@ -224,15 +208,15 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>N/A</td>
       <td>N/A</td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td>March 2023</td>
     </tr>
 <tr>
-      <td class="thick-border-right">V1</td>
+      <td>V1</td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td>N/A</td>
       <td>N/A</td>
       <td><p>&#10003;</p></td>
@@ -240,15 +224,14 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>-</td>
       <td>-</td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td>July 2023</td>
     </tr>
     <tr>
-      <td class="thick-border-right">V2</td>
+      <td>V2</td>
       <td>-</td>
       <td><p>&#10003;</p></td>
       <td>-</td>
-      <td class="thick-border-right">-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -256,15 +239,16 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td class="thick-border-right">-</td>
+      <td>-</td>
+      <td>-</td>
       <td>Jan 2024</td>
     </tr>
 <tr>
-      <td class="thick-border-right">V3</td>
+      <td>V3</td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
@@ -272,15 +256,13 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td>-</td>
-      <td class="thick-border-right">-</td>
+      <td>-</td>
       <td>Feb 2025</td>
     </tr>
 <tr>
-      <td class="thick-border-right">V3a</td>
+      <td>V3a</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
       <td>-</td>
       <td><p>&#10003;</p></td>
       <td>-</td>
@@ -288,7 +270,9 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>-</td>
       <td><p>&#10003;</p></td>
       <td>-</td>
-      <td class="thick-border-right"><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
       <td>Sept 2025</td>
     </tr>
   </tbody>
