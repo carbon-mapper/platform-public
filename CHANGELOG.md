@@ -16,13 +16,14 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 
 # Summary Table
 
-| **Version**     |                                                                  **High Level Notes**                                                                  | **Date Available** | **Processing SW**         |
-|:----------------|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
-| jpl             |                                                 Data processed by NASA JPL (Jet Propulsion Laboratory)                                                 | Aug 2016           | No version data available |
-| [v0](#version0) |                                                                Initial data algorithms                                                                 | March 2023         | No version data available |
-| [v1](#version1) |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |
-| [v2](#version2) |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
-| [v3](#version3) | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
+| **Version**       |                                                                  **High Level Notes**                                                                  | **Date Available** | **Processing SW**         |
+|:------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
+| jpl               |                                                 Data processed by NASA JPL (Jet Propulsion Laboratory)                                                 | Aug 2016           | No version data available |
+| [v0](#version0)   |                                                                Initial data algorithms                                                                 | March 2023         | No version data available |
+| [v1](#version1)   |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |
+| [v2](#version2)   |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
+| [v3](#version3)   | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
+| [v3a](#version3a) |                                                             Updates to CO2 quantification                                                              | Sept 2025          | \> 3.34.0                 |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -150,6 +151,138 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 Refer to the ATBD for an in depth scientific justification of algorithms. The [L2B ATBD](https://assets.carbonmapper.org/documents/L2B%20Algorithm%20Theoretical%20Basis%20Document_formatted_10-24-25.pdf) includes details about filter types (MF/MFA/MFAL) and Unit Absorption Spectrum. The [L3/L4 ATBD](https://assets.carbonmapper.org/documents/L3_L4%20Algorithm%20Theoretical%20Basis%20Document_formatted_10-24-24.pdf) includes details about dynamic vs static retrievals, simple vs concentric circles IME, and maximum fetch)
 
 **NOTE**: **<span style="color:red"> **bolded text** </span>** indicates changes to algorithms in current version
+
+## Detailed Version Impact Table
+
+<table>
+  <thead>
+    <tr>
+    <th colspan="1" rowspan="2">Version</th>
+    <th colspan="4">Product Levels Impacted</th>
+    <th colspan="8">Instrument/Gas Impacted</th>
+    </tr>
+    <tr>
+      <th>L1</th>
+      <th>L2</th>
+      <th>L3</th>
+      <th>L4</th>
+      <th>TAN CH4</th>
+      <th>TAN C02</th>
+      <th>EMIT CH4</th>
+      <th>EMIT CO2</th>
+      <th>AV3 CH4</th>
+      <th>AV3 C02</th>
+      <th>GAO/ANG CH4</th>
+      <th>GAO/ANG CO2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>jpl</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+    </tr>
+    <tr>
+      <td>V0</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+    </tr>
+<tr>
+      <td>V1</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+    </tr>
+    <tr>
+      <td>V2</td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+<tr>
+      <td>V3</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+<tr>
+      <td>V3a</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td>-</td>
+      <td><p>&#10003;</p></td>
+    </tr>
+  </tbody>
+</table>
+
+
+# Version 3a <a name="version3a"></a>
+
+## Quantification Products
+
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L4a (collection: l4a-co2-mfal-v3a) </summary>
+
+* Wind Stack Height - tbd
+
+</details>
+</details>
 
 # Version 3 <a name="version3"></a>
 
