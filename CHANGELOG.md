@@ -152,19 +152,18 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 
 **NOTE**: **<span style="color:red"> **bolded text** </span>** indicates changes to algorithms in current version
 
-## Detailed Version Impact Table
+## Detailed Quantification Version Impact Table
 
 
 <table>
   <thead>
     <tr>
     <th colspan="1" rowspan="2">Version</th>
-    <th colspan="4">Product Levels Impacted</th>
+    <th colspan="3">Product Levels Impacted</th>
     <th colspan="8">Instrument/Gas Impacted</th>
     <th colspan="1" rowspan="2">Date Available</th>
     </tr>
     <tr>
-      <th>L1</th>
       <th>L2</th>
       <th>L3</th>
       <th>L4</th>
@@ -184,7 +183,6 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td><p>&#10003;</p></td>
       <td>N/A</td>
       <td>N/A</td>
       <td>N/A</td>
@@ -200,11 +198,10 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
+      <td>N/A</td>
+      <td>N/A</td>
       <td><p>&#10003;</p></td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>N/A</td>
-      <td>N/A</td>
+      <td><p>&#10003;</p></td>
       <td>N/A</td>
       <td>N/A</td>
       <td><p>&#10003;</p></td>
@@ -216,32 +213,15 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td><p>&#10003;</p></td>
       <td>N/A</td>
       <td>N/A</td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td>-</td>
-      <td>-</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td>July 2023</td>
-    </tr>
-    <tr>
-      <td>V2</td>
-      <td>-</td>
-      <td><p>&#10003;</p></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Jan 2024</td>
     </tr>
 <tr>
       <td>V3</td>
@@ -254,25 +234,23 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
-      <td><p>&#10003;</p></td>
-      <td>-</td>
-      <td>-</td>
+      <td> </td>
+      <td> </td>
       <td>Feb 2025</td>
     </tr>
 <tr>
       <td>V3a</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td> </td>
+      <td> </td>
       <td><p>&#10003;</p></td>
-      <td>-</td>
+      <td> </td>
       <td><p>&#10003;</p></td>
-      <td>-</td>
+      <td> </td>
       <td><p>&#10003;</p></td>
-      <td>-</td>
+      <td> </td>
       <td><p>&#10003;</p></td>
-      <td>-</td>
-      <td><p>&#10003;</p></td>
+      <td> </td>
+      <td> </td>
       <td>Sept 2025</td>
     </tr>
   </tbody>
