@@ -23,7 +23,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v1](#version1)   |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |
 | [v2](#version2)   |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
 | [v3](#version3)   | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
-| [v3a](#version3a) |                                                             Updates to CO2 quantification                                                              | Sept 2025          | \> 3.34.0                 |
+| [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Oct 2025           | \> 3.38.0                 |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -241,17 +241,17 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 <tr>
       <td>V3a</td>
       <td> </td>
-      <td> </td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td> </td>
       <td><p>&#10003;</p></td>
-      <td> </td>
-      <td><p>&#10003;</p></td>
-      <td> </td>
-      <td><p>&#10003;</p></td>
-      <td> </td>
-      <td> </td>
-      <td>Sept 2025</td>
+      <td>Oct 2025</td>
     </tr>
   </tbody>
 </table>
@@ -261,14 +261,61 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 
 ## Quantification Products
 
+### TAN, EMIT
 <details open><summary> CO2 </summary>
 <details open>
-  <summary>  L4a (collection: l4a-co2-mfal-v3a) </summary>
+  <summary>  L3a (collections: l3a-co2-mfal-v3a) </summary>
 
-* Wind Stack Height - tbd
+* Noise masking threshold: background + 1 * noise
+* CMF is clipped to a smaller dataset, no_data values will be left as nans
 
 </details>
 </details>
+
+<details open><summary> CH4 </summary>
+<details open>
+  <summary>  L3a (collections: l3a-ch4-mfa-v3a) </summary>
+
+* Noise masking threshold: background + 2 * noise
+* CMF is clipped to a smaller dataset, no_data values will be left as nans
+
+</details>
+</details>
+
+
+### AV3
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L3a (collections: l3a-co2-mfal-v3a) </summary>
+
+* Noise masking threshold: background + 1 * noise
+* CMF is clipped to a smaller dataset, no_data values will be left as nans
+* Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length
+
+</details>
+</details>
+
+<details open><summary> CH4 </summary>
+<details open>
+  <summary>  L3a (collections: l3a-ch4-mf-v3a) </summary>
+
+* Noise masking threshold: background + 2 * noise
+* CMF is clipped to a smaller dataset, no_data values will be left as nans
+* Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length
+
+</details>
+</details>
+
+### ANG, GAO
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L3a (collections: l3a-co2-mfal-v3a) </summary>
+
+* Noise masking threshold: background + 1 * noise
+* CMF is clipped to a smaller dataset, no_data values will be left as nans
+</details>
+</details>
+
 
 # Version 3 <a name="version3"></a>
 
