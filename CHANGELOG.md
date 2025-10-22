@@ -267,7 +267,6 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
   <summary>  L3a (collections: l3a-co2-mfal-v3a) </summary>
 
 * Noise masking threshold: background + 1 * noise
-* CMF is clipped to a smaller dataset, no_data values will be left as nans
 
 </details>
 </details>
@@ -277,7 +276,6 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
   <summary>  L3a (collections: l3a-ch4-mfa-v3a) </summary>
 
 * Noise masking threshold: background + 2 * noise
-* CMF is clipped to a smaller dataset, no_data values will be left as nans
 
 </details>
 </details>
@@ -289,7 +287,6 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
   <summary>  L3a (collections: l3a-co2-mfal-v3a) </summary>
 
 * Noise masking threshold: background + 1 * noise
-* CMF is clipped to a smaller dataset, no_data values will be left as nans
 * Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length
 
 </details>
@@ -300,7 +297,6 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
   <summary>  L3a (collections: l3a-ch4-mf-v3a) </summary>
 
 * Noise masking threshold: background + 2 * noise
-* CMF is clipped to a smaller dataset, no_data values will be left as nans
 * Quantified plume lengths (reported as fetch) are consistent with IME concentration mask length
 
 </details>
@@ -312,7 +308,6 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
   <summary>  L3a (collections: l3a-co2-mfal-v3a) </summary>
 
 * Noise masking threshold: background + 1 * noise
-* CMF is clipped to a smaller dataset, no_data values will be left as nans
 </details>
 </details>
 
