@@ -23,7 +23,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v1](#version1)   |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |
 | [v2](#version2)   |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
 | [v3](#version3)   | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
-| [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Oct 2025           | \> 3.38.0                 |
+| [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Nov 2025           | \> 3.40.0                 |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -251,7 +251,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td> </td>
       <td><p>&#10003;</p></td>
-      <td>Oct 2025</td>
+      <td>Nov 2025</td>
     </tr>
   </tbody>
 </table>
