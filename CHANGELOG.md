@@ -169,11 +169,11 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <th>L3</th>
       <th>L4</th>
       <th >TAN CH4</th>
-      <th>TAN C02</th>
+      <th>TAN CO2</th>
       <th>EMIT CH4</th>
       <th>EMIT CO2</th>
       <th>AV3 CH4</th>
-      <th>AV3 C02</th>
+      <th>AV3 CO2</th>
       <th>GAO/ANG CH4</th>
       <th>GAO/ANG CO2</th>
     </tr>
@@ -294,6 +294,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 <details open><summary> CH4 </summary>
 <details open>
   <summary>  L3a (collections: l3a-ch4-mfa-v3b) </summary>
+
 * Fetch calculation as convex hull of masked pixels to better represent full extent of the plume shape
 * New Stac Properties for background_std_ppmm (background standard deviation in units of ppmm) and ime_uncertainty (generated via noise parameters when available)
 * Bug fix: background std calculation corrected to use unmasked, data pixels from a consistent crop size (300m for airborne, 2508m for satellite)
