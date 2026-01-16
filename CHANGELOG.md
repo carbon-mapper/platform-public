@@ -25,6 +25,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v3](#version3)   | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
 | [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Nov 2025           | \> 3.40.0                 |
 | [v3b](#version3b) |                                                       Minor IME bug fixes and cloud optimization                                                       | Dec 2025           | \> 3.42.0                 |
+| [v3c](#version3c) |                                                    CO2 update to use simple emission quantification                                                    | Jan 2026           | \> 3.51.0                 |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -269,8 +270,34 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td>Dec 2025</td>
     </tr>
+<tr>
+      <td>V3c</td>
+      <td> </td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td> </td>
+      <td></td>
+      <td>Jan 2026</td>
+    </tr>
   </tbody>
 </table>
+
+# Version 3c <a name="version3c"></a>
+## Quantification Products
+### TAN, EMIT, AV3
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L4a (collections: l4a-co2-mfal-v3c) </summary>
+
+* Emission are calculated using Simple Emission Quantification method
+</details>
+</details>
 
 
 # Version 3b <a name="version3b"></a>
