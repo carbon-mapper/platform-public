@@ -26,6 +26,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Nov 2025           | \> 3.40.0                 |
 | [v3b](#version3b) |                                                       Minor IME bug fixes and cloud optimization                                                       | Dec 2025           | \> 3.42.0                 |
 | [v3c](#version3c) |                                                    CO2 update to use simple emission quantification                                                    | Jan 2026           | \> 3.51.0                 |
+| [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -285,8 +286,87 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td></td>
       <td>Jan 2026</td>
     </tr>
+<tr>
+      <td>V3d</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td>Apr 2026</td>
+    </tr>
   </tbody>
 </table>
+
+# Version 3d <a name="version3d"></a>
+## Quantification Products
+### TAN
+<details open>
+   <summary> All CO2/CH4 L2b, L3a, L4a collections</summary>
+
+* Fixed orthorectification bug causing pixel blurring in a small subset of Tanager scenes collected perpendicular to satellite flight path. (Impacts all orthorectified assets and has a small impact on emission quantification of impacted scenes)
+</details>
+
+### TAN, EMIT, AV3
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L2b (collections: l2b-co2-mfal-v3d, l2b-ch4-mfa-v3d) </summary>
+
+* correction to fill columns that fail a MF retrieval with nodata for all per column failure cases
+
+</details>
+</details>
+
+<details open><summary> CH4 </summary>
+<details open>
+  <summary>  L2b (collections: l2b-ch4-mfa-v3d) </summary>
+
+* correction to fill columns that fail a MF retrieval with nodata for all per column failure cases
+* uncertainty.tif: correction to calculation of uncertainty asset
+
+</details>
+
+<details open>
+  <summary>  L3a (collections: l3a-ch4-mfa-v3d) </summary>
+
+* correction to ime uncertainty calculation based on upstream correction to calculation of uncertainty asset
+
+</details>
+
+<details open>
+  <summary>  L4a (collections: l4a-ch4-mfa-v3d) </summary>
+
+* correction to emission uncertainty calculation based on upstream correction to calculation of uncertainty asset
+
+</details>
+
+</details>
+
+### ANG, GAO
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L2b (collections: l2b-co2-mfal-v3d, l2b-ch4-mfa-v3d) </summary>
+
+* correction to fill columns that fail a MF retrieval with nodata for all per column failure cases
+
+</details>
+</details>
+
+<details open><summary> CH4 </summary>
+<details open>
+  <summary>  L2b (collections: l2b-ch4-mfa-v3d) </summary>
+
+* correction to fill columns that fail a MF retrieval with nodata for all per column failure cases
+* uncertainty.tif: addition of uncertainty asset based on calibrated noise file
+
+</details>
+</details>
 
 # Version 3c <a name="version3c"></a>
 ## Quantification Products
