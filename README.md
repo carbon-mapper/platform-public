@@ -2,7 +2,7 @@
 
 This repository serves as a public issue tracker for the Carbon Mapper platform and any other public-facing tools. It
 does not contain any of the code that powers the platform. If you have questions about Carbon Mapper the organization or
-the data found within our platform, please visit our [contact page](https://carbonmapper.org/contact-us).
+the data found within our platform, please visit our [contact page](https://carbonmapper.org/contact).
 
 ## Creating an issue
 
