@@ -27,7 +27,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v3b](#version3b) |                                                       Minor IME bug fixes and cloud optimization                                                       | Dec 2025           | \> 3.42.0                 |
 | [v3c](#version3c) |                                                    CO2 update to use simple emission quantification                                                    | Jan 2026           | \> 3.51.0                 |
 | [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |
-| [v3e](#version3e) |                                        Fixed CMF alpha value, CO2 emission wind scaling, AV3 uncertainty update                                        | Jun 2026           | \> 3.80.0                 |
+| [v3e](#version3e) |                              Fixed CMF alpha value, CO2 emission wind scaling and sector changes, AV3 uncertainty update                               | Jun 2026           | \> 3.80.0                 |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -305,7 +305,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 <tr>
       <td>V3e</td>
       <td><p>&#10003;</p></td>
-      <td><p></p></td>
+      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
@@ -328,21 +328,21 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 <details open>
   <summary>  L2b (collections: l2b-co2-mfal-v3e) </summary>
 
-* update to use a single alpha value of 3.16e-06 when calculating covariance using looshrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
+* update to use a single alpha value of 3.16e-05 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
 
 </details>
 
 <details open>
   <summary>  L2b (collections: l2b-co2-mfa|mfma|mf-v3e) </summary>
 
-* update to use a single alpha value of 3.16e-05 when calculating covariance using looshrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
+* update to use a single alpha value of 3.16e-06 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
 
 </details>
 
 <details open>
   <summary>  L4a (collections: l4a-co2-mfal-v3e) </summary>
 
-* update to use a 10m stack height when scaling winds + emission rates for plumes from 1A1 and 1A2 sectors (previously a 10m stack height was used for all plumes)
+* update to use a 50m stack height when scaling winds + emission rates for plumes from 1A1 and 1A2 sectors (previously a 10m stack height was used for all plumes)
 
 </details>
 </details>
@@ -352,7 +352,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 <details open>
   <summary>  L2b (collections: l2b-ch4-mfa-v3d) </summary>
 
-* update to use a single alpha value of 3.16e-06 when calculating covariance using looshrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
+* update to use a single alpha value of 3.16e-06 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
 
 </details>
 
