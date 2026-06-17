@@ -333,7 +333,14 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 </details>
 
 <details open>
-  <summary>  L2b (collections: l2b-co2-mfa|mfma|mf-v3e) </summary>
+  <summary>  L2b (collections: l2b-co2-mfma|mfm-v3e) </summary>
+
+* update to use a single alpha value of 1e-10 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
+
+</details>
+
+<details open>
+  <summary>  L2b (collections: l2b-co2-mfa|mf-v3e) </summary>
 
 * update to use a single alpha value of 3.16e-06 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
 
@@ -350,9 +357,16 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 
 <details open><summary> CH4 </summary>
 <details open>
-  <summary>  L2b (collections: l2b-ch4-mfa-v3d) </summary>
+  <summary>  L2b (collections: l2b-ch4-mfa-v3e) </summary>
 
 * update to use a single alpha value of 3.16e-06 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
+
+</details>
+
+<details open>
+  <summary>  L2b (collections: l2b-ch4-mfma|mfm-v3e) </summary>
+
+* update to use a single alpha value of 1e-10 when calculating covariance using LOO (Leave One Out) shrinkage estimate (previously an alpha value was selected from a range of 200 alpha values between 0-1, by determining the alpha with the minimum negative log-likelihood)
 
 </details>
 
