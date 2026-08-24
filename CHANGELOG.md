@@ -16,18 +16,18 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 
 # Summary Table
 
-| **Version**       |                                                                  **High Level Notes**                                                                  | **Date Available** | **Processing SW**         |
-|:------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|
-| jpl               |                                                 Data processed by NASA JPL (Jet Propulsion Laboratory)                                                 | Aug 2016           | No version data available |
-| [v0](#version0)   |                                                                Initial data algorithms                                                                 | March 2023         | No version data available |
-| [v1](#version1)   |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |
-| [v2](#version2)   |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |
-| [v3](#version3)   | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  |
-| [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Nov 2025           | \> 3.40.0                 |
-| [v3b](#version3b) |                                                       Minor IME bug fixes and cloud optimization                                                       | Dec 2025           | \> 3.42.0                 |
-| [v3c](#version3c) |                                                    CO2 update to use simple emission quantification                                                    | Jan 2026           | \> 3.51.0                 |
-| [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |
-| [v3e](#version3e) |                              Fixed CMF alpha value, CO2 emission wind scaling and sector changes, AV3 uncertainty update                               | Jun 2026           | \> 3.80.0                 |
+| **Version**       |                                                                  **High Level Notes**                                                                  | **Date Available** | **Processing SW**         | **Annual Reprocess**                       |
+|:------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------|:--------------------------|:------------------------------------------:|
+| jpl               |                                                 Data processed by NASA JPL (Jet Propulsion Laboratory)                                                 | Aug 2016           | No version data available |                                            |
+| [v0](#version0)   |                                                                Initial data algorithms                                                                 | March 2023         | No version data available |                                            |
+| [v1](#version1)   |                                                    Heterogenous algorithm iterations across sensors                                                    | July 2023          | \> 0.4.0                  |                                            |
+| [v2](#version2)   |                                                              Visualization products only                                                               | Jan 2024           | \> 0.21.0                 |                                            |
+| [v3](#version3)   | Stable release to include more sensors/gases, retrievals incorporate more atmospheric information, updated masking and robust uncertainty calculations | Feb 2025           | \> 3.0.0                  | [Aug 2025](#v3-annual-reprocess)           |
+| [v3a](#version3a) |                                               New Dynamic Noise Masking algorithm applied to L3 products                                               | Nov 2025           | \> 3.40.0                 |                                            |
+| [v3b](#version3b) |                                                       Minor IME bug fixes and cloud optimization                                                       | Dec 2025           | \> 3.42.0                 |                                            |
+| [v3c](#version3c) |                                                    CO2 update to use simple emission quantification                                                    | Jan 2026           | \> 3.51.0                 |                                            |
+| [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |                                            |
+| [v3e](#version3e) |                              Fixed CMF alpha value, CO2 emission wind scaling and sector changes, AV3 uncertainty update                               | Jun 2026           | \> 3.80.0                 | [Aug 2026](#v3e-annual-reprocess)          |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -166,6 +166,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
     <th colspan="3">Product Levels Impacted</th>
     <th colspan="8">Instrument/Gas Impacted</th>
     <th colspan="1" rowspan="2">Date Available</th>
+    <th colspan="1" rowspan="2">Annual Reprocess</th>
     </tr>
     <tr>
       <th>L2</th>
@@ -196,6 +197,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td>Aug 2016</td>
+      <td></td>
     </tr>
     <tr>
       <td>V0</td>
@@ -211,6 +213,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td>March 2023</td>
+      <td></td>
     </tr>
 <tr>
       <td>V1</td>
@@ -226,6 +229,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td>July 2023</td>
+      <td></td>
     </tr>
 <tr>
       <td>V3</td>
@@ -241,6 +245,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td> </td>
       <td> </td>
       <td>Feb 2025</td>
+      <td><a href="#v3-annual-reprocess">Aug 2025</a></td>
     </tr>
 <tr>
       <td>V3a</td>
@@ -256,6 +261,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td> </td>
       <td><p>&#10003;</p></td>
       <td>Nov 2025</td>
+      <td></td>
     </tr>
 <tr>
       <td>V3b</td>
@@ -271,6 +277,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td> </td>
       <td><p>&#10003;</p></td>
       <td>Dec 2025</td>
+      <td></td>
     </tr>
 <tr>
       <td>V3c</td>
@@ -286,6 +293,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td> </td>
       <td></td>
       <td>Jan 2026</td>
+      <td></td>
     </tr>
 <tr>
       <td>V3d</td>
@@ -301,6 +309,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td>Apr 2026</td>
+      <td></td>
     </tr>
 <tr>
       <td>V3e</td>
@@ -316,6 +325,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td><p></p></td>
       <td><p></p></td>
       <td>Jun 2026</td>
+      <td><a href="#v3e-annual-reprocess">Aug 2026</a></td>
     </tr>
   </tbody>
 </table>
@@ -378,6 +388,35 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 
 * correction to emission uncertainty calculation based on presence of uncertainty asset (available for AV3 plumes after Feb 2025), plumes prior to this date will have emission uncertainty calculcated based on the background standard deviation of the IME mask.
 </details>
+
+## Reprocessing Correspondence <a name="v3e-annual-reprocess"></a>
+
+August 20, 2026
+
+Hello Carbon Mapper Data Portal Users,
+
+In the coming days, Carbon Mapper will reprocess a portion of the historical satellite data available on our public portal. This is part of an annual review process that determines which historical data is ready for updates based on available algorithm improvements.
+
+These updates reflect our commitment to continuously improving the scientific algorithms used to generate the methane and CO2 plume data on our portal. We apply updates to both new and historical data, as necessary. This effort, known as “reprocessing,” is a recognized best practice in scientific data management, ensuring data remains accurate, consistent, and aligned with the latest standards.
+
+The scope of this year’s reprocessing is primarily focused on carbon dioxide data. In some cases, refinements to our CO2 quantification methods led to changes in reported emission rates. Additionally, a few sector names were adjusted to better reflect their sources. If you have questions about how these changes might apply to your use cases, please contact us.
+
+As Carbon Mapper acquires and quantifies more data across regions, sectors, elevations, surfaces, wind speeds, and environmental conditions, we continue to improve the science and algorithms behind our emissions data.
+
+We also complete ongoing validation work, including controlled release experiments, underflights, and instrument and satellite inter-comparisons. These efforts ensure our data is accurate, consistent, and scientifically robust — enabling users to confidently assess trends in data over time.
+
+Portal users may see changes in existing data. Each historical reprocessing will build on the strengths of our algorithms, enhancing data accuracy and refining precision to provide even more reliable emission estimates. Carbon Mapper will perform historical data reprocessing annually, as needed.
+
+Please note that previous versions of historical data will remain accessible to users who may need this information for specific applications or comparative purposes.  
+
+All updates to Carbon Mapper data are detailed in our Change Log, which summarizes modifications and documents the state of the corresponding algorithms, and features a data processing FAQ.
+
+Please refer to Carbon Mapper’s STAC API to retrieve previously published versions of data.
+For additional information, please see our Algorithm Theoretical Basis Document.
+If you have questions, please reach out to data@carbonmapper.org.
+
+Thank you,
+The Carbon Mapper Team
 
 # Version 3d <a name="version3d"></a>
 ## Quantification Products
@@ -915,6 +954,24 @@ Change Notes:
 
 ## Visualization Products
 * No changes 
+
+## Reprocessing Correspondence <a name="v3-annual-reprocess"></a>
+
+AUGUST 19, 2025
+ 
+Dear Carbon Mapper Data Portal users,
+
+Carbon Mapper will undergo historical data reprocessing over the coming days for satellite data that appears on our publicly accessible portal. We anticipate this process will take about one week.  
+
+Carbon Mapper is committed to continuously improving its scientific algorithms, which generate the methane and CO2 plume data available on our portal. When we release new algorithms, they are applied immediately to new observations. For previously released datasets, we carry out an annual reprocessing cycle so that historical data also reflects the latest improvements. This reprocessing approach — which is a best practice in scientific data management — ensures accuracy, consistency, and alignment with evolving standards.
+
+As Carbon Mapper acquires and quantifies more data across regions, sectors, elevations, wind speeds, and environmental conditions, we continue to improve the science and algorithms behind our emissions data. Our ongoing validation work includes controlled release experiments, under-flights, and instrument and satellite inter-comparisons. Together, these efforts ensure our data are scientifically robust and enable users to confidently assess data trends over time.
+
+Portal users will see changes in existing data. Please note that earlier versions of historical data will remain accessible to users who may need this information for specific applications or comparative purposes. All updates to Carbon Mapper data are detailed in our Change Log, which summarizes modifications, documents the status of the corresponding algorithms, and includes data processing FAQs. Please refer to Carbon Mapper’s STAC API to retrieve previously published versions of our data.
+
+For additional information, please see our Algorithm Theoretical Basis Document.
+
+If you have questions, please email our data team.
 
 # Version 2 (Visualization Products Only) <a name="version2"></a>
 <details open>
