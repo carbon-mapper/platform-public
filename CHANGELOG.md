@@ -28,6 +28,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v3c](#version3c) |                                                    CO2 update to use simple emission quantification                                                    | Jan 2026           | \> 3.51.0                 |                                            |
 | [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |                                            |
 | [v3e](#version3e) |                              Fixed CMF alpha value, CO2 emission wind scaling and sector changes, AV3 uncertainty update                               | Jun 2026           | \> 3.80.0                 | [Aug 2026](#v3e-annual-reprocess)          |
+| [v3f](#version3f) |                                                          CO2 quantification change to use MFB                                                          | Oct 2026           | \> 3.80.0                 |      |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -327,8 +328,43 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>Jun 2026</td>
       <td><a href="#v3e-annual-reprocess">Aug 2026</a></td>
     </tr>
+<tr>
+      <td>V3f</td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td></td>
+      <td><p>&#10003;</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td>Oct 2026</td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
+
+# Version 3f <a name="version3f"></a>
+## Quantification Products
+
+### TAN, EMIT, AV3
+<details open><summary> CO2 </summary>
+<details open>
+  <summary>  L3a (collections: l3a-ime-co2-mfb-v3f) </summary>
+
+* Uses MFB cmf type for IME and Emission quantification.
+
+</details>
+
+<details open>
+  <summary>  L4a (collections: l4a-co2-mfb-v3f) </summary>
+
+* Uses MFB cmf type for IME and Emission quantification.
+
+</details>
 
 # Version 3e <a name="version3e"></a>
 ## Quantification Products
