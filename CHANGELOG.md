@@ -29,7 +29,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |                                            |
 | [v3e](#version3e) |                              Fixed CMF alpha value, CO2 emission wind scaling and sector changes, AV3 uncertainty update                               | Jun 2026           | \> 3.80.0                 | [Aug 2026](#v3e-annual-reprocess)          |
 | [v3f](#version3f) |                                                          CO2 quantification change to use MFB                                                          | Oct 2026           | \> 3.128.0                |      |
-| [v3g](#version3g) |                                                          Improvements to Dynamic IME Masking                                                           | Nov 2026           | \> 3.135.0                |      |
+| [v3g](#version3g) |                                                 Improvements to Dynamic IME Masking + MFB prior error                                                  | Nov 2026           | \> 3.135.0                |      |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
