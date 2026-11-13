@@ -29,6 +29,7 @@ enhancing data accuracy and refining precision to provide even more reliable emi
 | [v3d](#version3d) |                             Minor Tanager (TAN) orthorectification bug fix, uncertainty updates, minor CMF nodata bug fix.                             | Apr 2026           | \> 3.72.2                 |                                            |
 | [v3e](#version3e) |                              Fixed CMF alpha value, CO2 emission wind scaling and sector changes, AV3 uncertainty update                               | Jun 2026           | \> 3.80.0                 | [Aug 2026](#v3e-annual-reprocess)          |
 | [v3f](#version3f) |                                                          CO2 quantification change to use MFB                                                          | Oct 2026           | \> 3.128.0                |      |
+| [v3g](#version3g) |                                                 Improvements to Dynamic IME Masking + MFB prior error                                                  | Nov 2026           | \> 3.135.0                |      |
 
 **NOTE** Version 2 is guaranteed to include the changes listed under version 2 products. Version 1 may include incremental changes between v1 and v2. 
 
@@ -252,7 +253,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>V3a</td>
       <td> </td>
       <td><p>&#10003;</p></td>
-      <td></td>
+      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
@@ -268,7 +269,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>V3b</td>
       <td> </td>
       <td><p>&#10003;</p></td>
-      <td></td>
+      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
@@ -344,8 +345,46 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
       <td>Oct 2026</td>
       <td></td>
     </tr>
+<tr>
+      <td>V3g</td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
+      <td>Nov 2026</td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
+
+# Version 3g <a name="version3g"></a>
+## Quantification Products
+
+### TAN, EMIT, AV3
+<details open><summary> CO2, CH4 </summary>
+<details open>
+  <summary>  L3a (collections: l3a-ime-ch4-mfa-v3g, l3a-ime-co2-mfb-v3g) </summary>
+
+* IME Dynamic masking now allow gaps for each dynamic mask while implementing physical constraints checking for downwind plumes and downwind merge. Instead of using probability > 0.7, a final threshold is optimized for the plume.
+
+</details>
+
+<details open>
+  <summary>  L2b (collections: l2b-ch4-mfb-v3g, l2b-co2-mfb-v3g) </summary>
+
+* MFB now uses the per-pixel MFA uncertainty as its prior error, with the noise term scaled by the Tanager sensitivity mode (for tanager data) and a column-wide prior used when no noise model is available. 
+* Gaussian width of shape tolerance updated from 0.03 to 0.01, which is used to estimate reference spectra for each pixel. This update helps reduce false enhancements.
+* As a result MFB based CO₂ concentrations, uncertainties and emissions will change.
+
+</details>
+</details>
 
 # Version 3f <a name="version3f"></a>
 ## Quantification Products
