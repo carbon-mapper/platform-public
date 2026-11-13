@@ -347,17 +347,17 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
     </tr>
 <tr>
       <td>V3g</td>
-      <td></td>
-      <td><p>&#10003;</p></td>
-      <td><p></p></td>
-      <td><p>&#10003;</p></td>
-      <td><p>&#10003;</p></td>
-      <td><p>&#10003;</p></td>
-      <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p>&#10003;</p></td>
       <td><p></p></td>
       <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p>&#10003;</p></td>
+      <td><p></p></td>
+      <td><p></p></td>
       <td>Nov 2026</td>
       <td></td>
     </tr>
@@ -374,6 +374,14 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
 
 * IME Dynamic masking now allow gaps for each dynamic mask while implementing physical constraints checking for downwind plumes and downwind merge. Instead of using probability > 0.7, a final threshold is optimized for the plume.
 
+</details>
+
+<details open>
+  <summary>  L2b (collections: l2b-ch4-mfb-v3g, l2b-co2-mfb-v3g) </summary>
+
+* MFB now uses the per-pixel MFA uncertainty as its prior error, with the noise term scaled by the Tanager sensitivity mode (for tanager data) and a column-wide prior used when no noise model is available. As a result MFB CO₂ concentrations, uncertainties and emissions will change.
+
+</details>
 </details>
 
 # Version 3f <a name="version3f"></a>
