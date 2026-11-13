@@ -380,7 +380,7 @@ Refer to the ATBD for an in depth scientific justification of algorithms. The [L
   <summary>  L2b (collections: l2b-ch4-mfb-v3g, l2b-co2-mfb-v3g) </summary>
 
 * MFB now uses the per-pixel MFA uncertainty as its prior error, with the noise term scaled by the Tanager sensitivity mode (for tanager data) and a column-wide prior used when no noise model is available. 
-* Shape-term gaussian width updated from 0.03 to 0.01. 
+* Gaussian width of shape tolerance updated from 0.03 to 0.01. 
 * As a result MFB based CO₂ concentrations, uncertainties and emissions will change.
 
 </details>
